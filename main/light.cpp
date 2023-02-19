@@ -11,6 +11,7 @@
 void LightSetup() {
   Serial.begin(9600);
   Serial.println("lightInit");
+  delay(100);
 }
 
 void Light() {
@@ -20,5 +21,5 @@ void Light() {
   } 
   else {
     Serial.println(CMD::LIGHT_BRIGHT);
-  } 
+  }
 }

@@ -6,6 +6,7 @@ void UltrasonicSetup() {
         pinMode(ECHO_PIN, INPUT);
         Serial.begin(9600);
         Serial.println("ultrasonicInit");
+        delay(100);
 }
 
 void Ultrasonic() {

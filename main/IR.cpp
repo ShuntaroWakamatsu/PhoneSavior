@@ -5,6 +5,7 @@ void IR_Setup() {
         pinMode(IR_PIN, INPUT);
         Serial.begin(9600);
         Serial.println("IRInit");
+        delay(100);
 }
 
 void IR() {

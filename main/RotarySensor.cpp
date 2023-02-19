@@ -5,6 +5,7 @@ void RotarySensorSetup() {
     Serial.begin(9600);
     Serial.println("RotarySensorInit");
     pinMode(ROTARY_ANGLE_PIN, INPUT);
+    delay(100);
 }
 
 void RotarySensor() {

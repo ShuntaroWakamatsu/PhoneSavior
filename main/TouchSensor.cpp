@@ -8,6 +8,7 @@ void TouchSensorSetup()  {
     Serial.begin(9600);
     Serial.println("TouchSensorInit");
     pinMode(TOUCH_PIN, INPUT);
+    delay(100);
 }
  
 void TouchSensor()  {

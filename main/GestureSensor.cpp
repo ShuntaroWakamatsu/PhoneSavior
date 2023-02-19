@@ -14,6 +14,7 @@ void GestureSensorSetup() {
 		Serial.println("INIT OK");
 	}
 	Serial.println("Please input your gestures:\n");
+  delay(100);
 }
  
 void GestureSensor() {
@@ -44,12 +45,9 @@ void GestureSensor() {
 				Serial.println(CMD::GESTURE_ANTICLOCKW);
 				break;  
 			default:
-				paj7620ReadReg(0x44, 1, &data1);
-				if (data1 == GES_WAVE_FLAG) {
-				  Serial.println(CMD::GESTURE_EMPTY);
-				}
+				Serial.println(CMD::GESTURE_EMPTY);
 				break;
 		}
 	}
-	delay(100);
+	delay(70);
 }

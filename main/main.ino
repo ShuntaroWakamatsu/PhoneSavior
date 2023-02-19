@@ -7,20 +7,22 @@
 #include "global.h"
 
 void setup(void) {
-  //GestureSensorSetup();
+  GestureSensorSetup();
   IR_Setup();
   LightSetup();
   RotarySensorSetup();
   TouchSensorSetup();
   UltrasonicSetup();
   delay(2000);
+  Serial.println(CMD::START);
 }
 
 void loop(void) {
-  //GestureSensor();
+  GestureSensor();
   IR();
   Light();
   RotarySensor();
   TouchSensor();
   Ultrasonic();
+  delay(200);
 }
